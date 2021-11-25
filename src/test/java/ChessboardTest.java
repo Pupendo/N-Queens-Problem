@@ -24,14 +24,10 @@ public class ChessboardTest {
         printBoard();
         Assertions.assertFalse(chessboard.insertQueen(0,7));
         Assertions.assertFalse(chessboard.insertQueen(2,0));
-
-
         Assertions.assertTrue(chessboard.insertQueen(1,1));
         printBoard();
-
         Assertions.assertFalse(chessboard.insertQueen(2,5));
         Assertions.assertFalse(chessboard.insertQueen(1,1));
-
     }
 
 
@@ -64,18 +60,18 @@ public class ChessboardTest {
         chessboard = new Chessboard(10);
         solutions = chessboard.NQueensProblem();
         Assertions.assertEquals(724,solutions.size());
-
-        chessboard = new Chessboard(11);
-        solutions = chessboard.NQueensProblem();
-        Assertions.assertEquals(2680,solutions.size());
-
-        chessboard = new Chessboard(12);
-        solutions = chessboard.NQueensProblem();
-        Assertions.assertEquals(14200,solutions.size());
-
-        chessboard = new Chessboard(13);
-        solutions = chessboard.NQueensProblem();
-        Assertions.assertEquals(73712,solutions.size());
+//
+//        chessboard = new Chessboard(11);
+//        solutions = chessboard.NQueensProblem();
+//        Assertions.assertEquals(2680,solutions.size());
+//
+//        chessboard = new Chessboard(12);
+//        solutions = chessboard.NQueensProblem();
+//        Assertions.assertEquals(14200,solutions.size());
+//
+//        chessboard = new Chessboard(13);
+//        solutions = chessboard.NQueensProblem();
+//        Assertions.assertEquals(73712,solutions.size());
 //
 //        chessboard = new Chessboard(14);
 //        solutions = chessboard.NQueensProblem();

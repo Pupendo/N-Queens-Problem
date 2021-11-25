@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Chessboard {
     private int[][] board;
-    private int n;
+    private final int n;
 
     public Chessboard(int n){
         this.n = n;
@@ -88,7 +88,7 @@ public class Chessboard {
     }
 
     public List<Chessboard> NQueensProblem(){
-        return NQueensProblem(copy(), new ArrayList<>(),0);
+        return NQueensProblem(new Chessboard(n), new ArrayList<>(),0);
     }
 
     private List<Chessboard> NQueensProblem(Chessboard chessboard, List<Chessboard> solutions, int column){
